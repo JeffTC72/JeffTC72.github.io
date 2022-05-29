@@ -1,0 +1,178 @@
+/******STYLE******/
+
+.canvas{
+    aspect-ratio: 16 / 9;
+    width: 1080px;
+
+    display: flex;
+    
+    background-color: #ffffff;
+    background-size: contain;
+}
+.garage{
+    background-image: url("/public/img/garage.jpg");
+}
+.race{
+    flex-direction: column-reverse;
+
+    background-image: url("/public/img/sky.gif");
+}
+
+.display{
+    width: 55%;
+    padding-bottom: 2em;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.shelf{
+    width: 45%;
+    padding-top: 5em;
+    /* margin-bottom: 2em; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.shelf img{
+    width: 6em;
+}
+
+.shelf section{
+    margin-left: 0.5em;
+    margin-right: 2em;
+
+    display: flex;
+    justify-content: space-around;
+    
+}
+.shelf .shelfBody{
+ margin-bottom: 0.5em;
+}
+.shelf .shelfPaint{
+    margin-bottom: 0.5em;
+}
+.shelf .shelfWheel{
+    margin-bottom: 1.5em;
+}
+.shelf .shelfWheel img{
+    width: 4em;
+}
+.shelf .startBtn{
+    width: 6em;
+    height: 3em;
+
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 1em;
+    
+}
+.shelf .startBtn img{
+    width: 1em;
+    height: 1em;
+    filter: invert(100);
+}
+.shelf .random{
+    width: 3em;
+    height: 3em;
+
+    position: absolute;
+    right: 8em;
+    bottom: 1em;
+}
+
+.race .controls{
+    height: 6em;
+    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    background-color: rgb(75, 75, 75);
+}
+.race .controls .pedal{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    display: block;
+    height: 6em;
+    width: 6em;
+    background-color: transparent;
+    background-image: url(/public/img/pedal.png);
+    background-size: contain;
+}
+.race .controls .bar{
+    aspect-ratio: 461 / 32;
+    width: 60%;
+
+    display: block;
+    position: relative;
+
+    background-color: transparent;
+    background-image: url(/public/img/bar.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.race .controls .bar span{
+    height: 100%;
+    width: 2px;
+    
+    display: block;
+    position: absolute;
+    left: 0%;
+    transition: left 2s;
+
+    background-color: #ffffff;
+    
+}
+
+.race .road{
+    height: 25%;
+
+    display: flex;
+    position: relative;
+
+    background-color: #000000;
+    background-image: url(/public/img/road.jpg);
+    background-size: contain;
+}
+.race .road .raceCar1{
+    z-index: 100;
+
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    transition: left 1s;
+}
+.race .road .raceCar2{
+    position: absolute;
+    bottom: 50%;
+    left: 10%;
+    transition: left 1s;
+}
+
+.race .announcer{
+    position: relative;
+}
+.race .announcer img{
+    width: 30em;
+    position: absolute;
+    left: 30%;
+    bottom: 0;
+}
+
+.hidden{
+    display: none;
+}

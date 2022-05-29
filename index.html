@@ -1,1 +1,77 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="uft-8">
+        <title>RL Drag Racer</title>
+        <link rel="stylesheet" href="public/style/main.css">
+    </head>
+
+    <body>
+        <main class="canvas garage">
+
+            <section class="display">
+
+                <img id="displayCar" src="public/img/rlracer-cars/ocnodi.png" style="height: 12em;">
+
+            </section>
+            <section class="shelf">
+                <section class="shelfBody">
+                    <img id="oc" class="body" src="public/img/rlracer-items/octane.png">
+                    <img id="do" class="body" src="public/img/rlracer-items/dominus.png">
+                    <img id="ty" class="body" src="public/img/rlracer-items/tyranno.png">
+                </section>
+
+                <section class="shelfPaint">
+                    <img id="no" class="paint" src="public/img/rlracer-items/clean.png">
+                    <img id="fl" class="paint" src="public/img/rlracer-items/flames.png">
+                    <img id="wi" class="paint" src="public/img/rlracer-items/wings.png">
+                </section>
+
+                <section class="shelfWheel">
+                    <img id="di" class="wheel" src="public/img/rlracer-items/dieci.png">
+                    <img id="be" class="wheel" src="public/img/rlracer-items/bender.png">
+                    <img id="vo" class="wheel" src="public/img/rlracer-items/vortex.png">
+                    <img id="sp" class="wheel" src="public/img/rlracer-items/golden-dieci.png">
+                </section>
+
+                <section class="random">
+                    <img src="/public/img/dice.png">
+                </section>
+
+                <section class="startBtn">
+                    <img src="/public/img/arrow.png">
+                    <p>Let's GO</p>
+                </section>
+            </section>
+
+        </main>
+
+        <main class="canvas race hidden">
+            
+            <section class="controls">
+
+                <section class="pedal pedalBtn">
+                </section>
+
+                <section class="bar">
+                    <span class="barMeter"></span>
+                </section>
+
+            </section>
+            
+            <section class="road">
+                <img class="raceCar1" src="public/img/rlracer-cars/ocnodi.png" style="height: 6em;">
+                <img class="raceCar2" src="public/img/rlracer-cars/ocnodi.png" style="height: 6em;">
+            </section>
+
+            <section class="announcer hidden">
+                <img class="announcerImg" src="/public/img/lose.png">
+            </section>
+
+        </main>
+        <p>All assets of cars and car parts were taken from Rocket League and are property of Psyonix and Epic Games</p>
+    </body>
+</html>
+
+<script src="public/js/main.js"></script>
+
